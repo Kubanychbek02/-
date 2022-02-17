@@ -1,0 +1,69 @@
+@import '../vars';
+
+.work{
+    background: rgb(238, 238, 238);
+    margin-top: 100px;
+    padding: 50px 60px;
+
+    &__title{
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    &__block{
+        margin-top: 50px;
+        display: flex;
+    }
+
+    &__card{
+        width: 400px;
+        padding: 10px 40px 40px 40px;
+        background: #fff;
+        border-radius: 20px;
+    }
+
+    &__card + &__card{
+        margin-left: 30px;
+    }
+    
+    &__num{
+        margin: 0;
+        margin-left: -30px;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        width: 40px;
+        padding: 7px;
+        border-radius: 50%;
+        background: $accent;
+    }
+
+    &__img{
+        width: 300px;
+    }
+
+    &__card-title{
+        margin: 0;
+        font-size: 30px;
+        color: $accent;
+    }
+
+    &__descr{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 770px) {
+    .work{
+        &__block{
+            margin-top: 50px;
+            display: flex;flex-wrap: wrap;
+
+        }
+
+        &__card{
+            margin-bottom: 30px;
+            margin-left: 0;
+        }
+    }
+}

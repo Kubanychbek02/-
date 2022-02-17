@@ -1,0 +1,39 @@
+.modals{
+    // background: rgba(102, 102, 102, 0.5);
+    // width: 100%;
+    //     height: 100%;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     z-index: 1;
+    //     display: none;
+
+    &__menu{
+        display: none;
+        margin: 0 auto;
+        width: 400px;
+        padding: 30px;
+        border-radius: 20px;
+        background: rgb(236, 236, 236);
+    }
+
+    &__titles{
+        display: flex;
+        align-items: center;
+    }
+
+    &__btn-x{
+        margin-top: -50px;
+        margin-right: -20px;
+        border: none;
+        font-size: 30px;
+        margin-left: auto;
+    }
+
+    .active{
+        position: absolute;
+        z-index: 2;
+        display: block;
+        margin: 50px;
+    }
+}

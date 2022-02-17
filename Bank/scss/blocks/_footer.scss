@@ -1,0 +1,56 @@
+.footer{
+    background: rgb(236, 236, 236);
+    padding: 50px 60px;
+
+    &__blocks{
+        display: flex;
+    }
+
+    &__infos{
+        width: 300px;
+    }
+
+    &__logo{
+        width: 250px;
+        margin: 0;
+    }
+
+    &__sosials-title{
+        margin-left: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    &__sosials-icons{
+        margin-left: 20px;
+        display: flex;
+    }
+
+    &__sosials-icon{
+        margin-left: 20px;
+        width: 30px;
+    }
+
+    &__block{
+        margin-left: 20px;
+    }
+
+    &__title{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 770px) {
+    .footer{
+       &__blocks{
+           display: block;
+           flex-wrap: wrap;
+       }
+
+       &__block{
+           margin-top: 50px;
+       }
+    }
+}

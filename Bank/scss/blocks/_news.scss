@@ -1,0 +1,27 @@
+@import '../vars';
+
+.news{
+    padding: 50px 60px;
+    margin-bottom: 50px;
+    &__title{
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+
+    &__card{
+        padding: 20px 40px;
+        border-radius: 10px;
+        box-shadow:2px 3px 15px $orange;
+    }
+
+    &__card + &__card{
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 770px) {
+    .news{
+
+    }
+}
