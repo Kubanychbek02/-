@@ -1,0 +1,246 @@
+@import '../vars';
+
+.banner{
+    .ban{
+        text-align: center;
+        &__img{
+            margin-top: 30px;
+            width: 800px;
+            border-radius: 5px;
+            margin-bottom: 50px;
+        }
+
+        .cats{
+            margin-left: 80px;
+
+            &__1{
+                display: flex;
+                margin-bottom: 20px;
+            }
+
+            &__los{
+                width: 390px;
+                margin-right: 20px;
+            }
+
+            &__ugr{
+                width: 185px;
+                margin-right: 20px;
+            }
+
+            &__meat{
+                width: 185px;
+            }
+
+            &__2{
+                display: flex;
+            }
+
+            &__frika{
+                width: 390px;
+                margin-right: 20px;
+            }
+
+            &__acsi{
+                width: 390px;
+            }
+        }
+    }
+
+
+    .nov{
+        margin-top: 50px;
+        margin-left: 65px;  
+        .novinki{
+            margin-right: 20px;
+            font-size: 24px;
+            font-weight: 500;
+            color: black;
+            text-decoration: none;
+            transition: .3s;
+
+            &:hover{
+                color: $line;
+                text-decoration:underline;
+            }
+        }
+
+        .pop{
+            font-size: 24px;
+            font-weight: 500;
+            color: black;
+            text-decoration: none;
+            transition: .3s;
+
+            &:hover{
+                color: $line;
+                text-decoration:underline;
+            }
+        }
+
+        .novs{
+            display: flex;
+        }
+
+        &__1{
+            margin-right: 20px;
+            width: 260px;
+            margin-top: 30px;
+           padding: 20px;
+           background-color: white;
+           z-index: 1;
+        }
+
+        &__1-img{
+            width: 230px;
+            margin-bottom: 20px;
+        }
+
+        &__1-descr{
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        &__1-supdescr{
+            font-size: 18px;
+            color: $line;
+            border-bottom: 0.5px solid $line;
+        }
+
+        &__1-prise{
+
+            display: flex;
+            .prise{
+                margin-top: 20px;
+
+                margin-right: 10px;
+                font-size: 22px;
+                font-weight: bold;
+            }
+
+            .prise-btn{
+                margin-top: 20px;
+
+                color: white;
+                padding: 3px 23px;
+                background-color: $accent;
+                margin-bottom: 20px;
+                color: rgb(15, 15, 15);
+                font-size: 20px;
+                font-weight: 500;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: .3s;
+
+                &:hover{
+                    background-color: rgb(228, 173, 102);
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .description{
+        max-width: 800px;
+        margin-left: 60px;
+        margin-top: 50px;
+        color: $line;
+
+        &__title{
+            margin-bottom: 30px;
+        }
+
+        &__next{
+            text-align: center; 
+            margin-top: 50px;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &__pod{
+            margin-left: 300px;
+            font-size: 24px;
+            color: $accent;
+        }
+
+        &__icon{
+            width: 20px;
+            margin-top: 15px;
+        }
+    }
+
+    .footer{
+        margin-top: 50px;
+        margin-bottom: 60px;
+        display: flex;
+        margin-left: 60px;
+        border-top: 0.5px solid $line;
+
+        .abauts{
+            margin-top: 20px;
+            border-right: 0.5px solid $line;
+
+            .abaut{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat (4, 1fr );
+                margin-top: 30px;
+                margin-right: 80px;
+                
+
+                &__descr{
+                    color: black;
+                    text-decoration: none;
+                    transition: .3s;
+                    margin-bottom: 15px;
+
+                    &:hover{
+                       color: $accent;
+                    }
+                }
+            }
+        }
+
+        .nummber{
+            margin-top: 20px;
+            border-right: 0.5px solid $line;
+
+            .num{
+                margin-left: 30px;
+                margin-right: 70px;
+                margin-top: 30px;
+
+                &__title{
+                    font-weight: 500;
+                }
+
+                &__write{
+                    border: none;
+                    background-color: #F2F2F2;
+                }
+
+                &__descr{
+                    margin-top: 30px;
+                    color: $line;
+                }
+
+                &__icon{
+                    width: 40px;
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        .tel{
+           
+            .phone{
+                margin: 50px 0 0 30px;
+
+                &__num{
+                    color: $line;
+                }
+            }
+        }
+    }
+}
