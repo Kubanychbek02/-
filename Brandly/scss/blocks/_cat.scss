@@ -1,0 +1,46 @@
+@import '../vars';
+
+.cat{
+    padding: 60px 0;
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 419px;
+        background-image: url(../../img/men.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        &--women{
+            background-image: url(../../img/wo.jpg);
+        }
+
+        &--accessories{
+            background-image: url(/img/ac.jpg);
+        }
+    }
+
+    &__title{
+        margin: 0;
+    }
+
+    &__link{
+        font-family: $secondery-font;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 40px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        text-transform: none;
+        text-decoration: none;
+        transition: .3s;
+
+        &:hover{
+            color: rgb(214, 248, 24);
+        }
+    }
+}

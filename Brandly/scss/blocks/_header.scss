@@ -1,0 +1,56 @@
+@import '../vars';
+
+.header{
+    padding: 16px 0;
+
+    &__logo{
+        max-width: 255px;
+        display: inline-block;
+    }
+
+    &__logo-img{
+        max-width: 100%;
+    }
+
+    &__nav-item + &__nav-item{
+        margin-left: 40px;
+    }
+
+    &__nav-link{
+        position: relative;
+        color: $accent;
+        transition: 1s;
+
+        &::after{
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            background-color: $accent;
+            width: 0;
+            height: 3px;
+            content: "";
+            transform: translateX(-50%);
+            transition: .5s;
+        }
+
+        &:hover{
+            color: rgb(59, 59, 59);
+
+            &::after{
+                width: 100%;
+            }
+        }
+    }
+
+    &__nav-toggler{
+        border: 1px solid $accent;
+
+        &:focus{
+            box-shadow: none;
+        }
+    }
+
+    &__svg{
+        fill: $accent;
+    }
+}

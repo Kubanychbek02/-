@@ -1,0 +1,60 @@
+@import '../vars';
+
+.blog{
+
+    &__img{
+        max-width: 620px;
+    }
+
+    &__title{
+        margin: 20px 0 15px 0;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 26px;
+        text-transform: capitalize;
+        color: #DC0000;
+
+    }
+
+    &__suptitle{
+        margin-bottom: 29px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: #333333;
+    }
+
+    &__descr{
+        margin-bottom: 20px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: capitalize;
+        color: #9A9A9A;
+    }
+
+    &__btn{
+        padding: 4px 25px 4px 25px;
+        border: 1px solid black;
+        text-decoration: none;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #333333;
+        transition: .2s;
+
+        &:hover{
+            color: $accent;
+            border: 1px solid $accent;
+        }
+    }
+}
